@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Customizer</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>Product Customizer</h1>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product-details">
+                <h2>DIY(Do it urself!)</h2>
+                <p class="description">It refers to the practice of creating, modifying, or repairing things on your own, without the direct aid of professionals or experts. This can include activities such as home improvement, crafting, building furniture, and various other projects.</p>
+                <p class="price">$99.99</p>
+                <div class="preview-gallery">
+                    <img src="images/images1.jpg" alt="Product Preview" class="preview-image">
+                    <img src="images/images2.jpg" alt="Red Product Preview" class="preview-image">
+                    <img src="images/images3.jpg" alt="Blue Product Preview" class="preview-image">
+                    <img src="images/images4.jpg" alt="Green Product Preview" class="preview-image">
+                </div>
+            </div>
+            <div class="product-image">
+                <img id="productImg" src="images/images1.jpg" alt="Product Image">
+            </div>
+            <div class="customization-options">
+                <h2>Customize Your Product</h2>
+                <div class="option">
+                    <label for="color">Color:</label>
+                    <div class="color-options">
+                        <input type="radio" id="color-red" name="color" value="red" checked>
+                        <label for="color-red" class="color red" data-color="red"></label>
+
+                        <input type="radio" id="color-blue" name="color" value="blue">
+                        <label for="color-blue" class="color blue" data-color="blue"></label>
+
+                        <input type="radio" id="color-green" name="color" value="green">
+                        <label for="color-green" class="color green" data-color="green"></label>
+                    </div>
+                </div>
+                <div class="option">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Product Customizer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

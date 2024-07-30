@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 50px;
+      background: url('images/images8.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    .container {
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .form-control {
+      border: 2px solid #007BFF;
+      border-radius: 5px;
+    }
+    .btn-primary {
+      background: #007BFF;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 123, 255, 0.5);
+    }
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+    #weather-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Weather Dashboard</h1>
+    <div class="form-group">
+      <input type="text" id="city" class="form-control" placeholder="Enter city name">
+    </div>
+    <button id="fetch-weather" class="btn btn-primary btn-block">Fetch Weather</button>
+    <div id="weather-container" class="mt-4"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script5.js"></script>
+</body>
+</html>

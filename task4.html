@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Information Portal</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <h1>Wildlife Information Portal</h1>
+    </header>
+    <main>
+        <section class="forms-section">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="form-container">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="registerName">Name:</label>
+                    <input type="text" id="registerName" name="registerName" required>
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" name="registerEmail" required>
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" name="registerPassword" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+        <section class="wildlife-buttons">
+            <h2>Explore Wildlife Information</h2>
+            <button onclick="showInfo('mammals')">Mammals</button>
+            <button onclick="showInfo('birds')">Birds</button>
+            <button onclick="showInfo('reptiles')">Reptiles</button>
+            <button onclick="showInfo('amphibians')">Amphibians</button>
+            <button onclick="showInfo('fish')">Fish</button>
+            <button onclick="showInfo('insects')">Insects</button>
+            <button onclick="showInfo('conservation')">Conservation Efforts</button>
+            <button onclick="showInfo('habitats')">Natural Habitats</button>
+        </section>
+        <section id="info" class="wildlife-info">
+            <!-- Info will appear here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wildlife Information Portal. All rights reserved.</p>
+    </footer>
+    <script src="script4.js"></script>
+</body>
+</html>
+<!-- here the end opf task 4 -->

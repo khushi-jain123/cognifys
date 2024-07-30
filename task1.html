@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(to right,#77A1D3,#79CBCA,#E684AE);
+            color: #141517;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h2,p{
+            text-align:center ;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #141517;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            background: linear-gradient(to right,#c2e59c,#64b3f4);
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        footer {
+            background: linear-gradient(to right,#77A1D3,#79CBCA,#E684AE);
+            color:#141517;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        marquee{
+            font-size: 1em;
+            text-shadow: 2px 2px 5px #000;
+            animation: typing 1s steps(18), blink .75s step-end infinite;
+        }
+    </style>
+</head>
+<body>
+     <audio class="song" loop autoplay>
+        <source controls src="music/Sleep Away.mp3">
+        </source>
+    </audio>
+    <header>
+        
+        <marquee scrollamount="20"><h1>My online Space!!!</h1></marquee>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2><b>Home</b></h2>
+            <p>This is the home section of my webpage. Here, I can introduce the purpose of my site.</p>
+        </section>
+
+        <section id="about">
+            <h2><b>About</b></h2>
+            <p>This section is about me. I can write a brief description about myself or the site.</p>
+        </section>
+
+        <section id="contact">
+            <h2><b>Contact</b></h2>
+            <p>Here is the contact information. Feel free to reach out via email or phone.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>&copy; 2024 My Basic Webpage</b></p>
+    </footer>
+</body>
+</html>
